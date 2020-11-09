@@ -1,0 +1,13 @@
+[package]
+name = "github_fork_sync"
+version = "0.1.0"
+authors = ["jff <yougetthat.f@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/jffin/github_fork_sync"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33"
