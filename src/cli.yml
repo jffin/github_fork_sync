@@ -1,0 +1,12 @@
+name: github_fork_sync
+author: jffin <yougetthat.f@gmail.com>
+about: Fork github repository from terminal.
+args:
+  - GITHUB_TOKEN:
+      help: GitHub token
+      long: github-token
+      takes_value: true
+      value_name: token
+  - TARGET_REPOSITORY:
+      help: The repository you want to fork
+      index: 1
