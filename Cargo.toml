@@ -6,7 +6,7 @@ edition = "2018"
 repository = "https://github.com/jffin/github_fork_sync"
 
 [[bin]]
-name = "main"
+name = "github_fork_sync"
 path = "src/main.rs"
 
 [dependencies]

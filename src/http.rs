@@ -30,7 +30,7 @@ pub async fn make_request(target: &str, token: &str) -> Result<(), Box<dyn std::
 
     if status == StatusCode::ACCEPTED {
         let result: JsonResult = response.json::<JsonResult>().await?;
-        println!("Success, your new url: {}", result.html_url);
+        println!("Success! Your New Repository: {}", result.html_url);
     } else if status == StatusCode::FORBIDDEN || status == StatusCode::UNAUTHORIZED {
         println!("Your token is invalid");
     } else {
